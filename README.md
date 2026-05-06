@@ -1,6 +1,6 @@
 # lisp.py
 
-A Lisp compiler written in Python based on the work by [Karim Hamidou](https://khamidou.com/) and Dr. Peter Norvig.
+A Lisp compiler written in Python based on the work by Dr. Peter Norvig and [Karim Hamidou](https://khamidou.com/).
 
 ## Features
 
