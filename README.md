@@ -1,10 +1,6 @@
-# Lispier
+# lisp.py
 
-A Lisp (Scheme) compiler written in Python 3 based on the work by Dr. Peter Norvig.
-
-## Overview
-
-Lispier is a Scheme interpreter and compiler implemented in Python 3, inspired by Dr. Peter Norvig's [Lispy](https://norvig.com/lispy.html) interpreter. This project aims to provide an easy-to-understand and extendable Scheme implementation, suitable for educational purposes and hobby projects.
+A Lisp compiler written in Python based on the work by [Karim Hamidou](https://khamidou.com/) and Dr. Peter Norvig.
 
 ## Features
 
@@ -19,4 +15,5 @@ To install Lispier, clone the repository and navigate to the project directory:
 ```bash
 git clone git@github.com:Yucheng-Yan/lispier.git 
 cd lispier
+```
 
