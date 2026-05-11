@@ -47,6 +47,37 @@ def tokenize(s):
                 ret.append(current_word)
                 current_word = ''
 
+        elif in_string is True:
+            current_word += char
+        
+        elif char in ['\t', '\n', ' ']:
+            continue
+
+        elif char in ['(', ')']:
+            ret.append(char)
+
+        else:
+            current_word += char
+            if i < len(s) - 1 and s[i+1] in ['(', ')', ' ', '\n', '\t']:
+                ret.append(current_word)
+                current_word = ''
+    return ret
+
+# Utility functions that convert tokens to their actual values
+def is_integer(s):
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
+
+def is_float(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+
 base_environment = {
     'print': lambda x: sys.stdout.write(str(x) + '\n')
 }
