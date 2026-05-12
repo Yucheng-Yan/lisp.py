@@ -78,6 +78,18 @@ def is_float(s):
     except ValueError:
         return False
 
+def is_string(s):
+    if s[0] == "'" and s[-1] == "'":
+        return True
+    return False
+
+def parse(tokens):
+    itert = iter(tokens)
+    token = itert.next()
+
+    if token != '(':
+        fail("Unexpected token {}".format(token))
+
 base_environment = {
     'print': lambda x: sys.stdout.write(str(x) + '\n')
 }
